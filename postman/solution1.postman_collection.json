@@ -1,0 +1,143 @@
+{
+	"variables": [],
+	"info": {
+		"name": "solution1",
+		"_postman_id": "37c211b2-be0b-274b-a994-9509dc0a5eb7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/user/profile",
+			"request": {
+				"url": "http://localhost:3000/api/user/profile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defunkt",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/user/repo",
+			"request": {
+				"url": "http://localhost:3000/api/user/repo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defunkt",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/user/repo/popular [ with numberOfRepos only ]",
+			"request": {
+				"url": "http://localhost:3000/api/user/repo/popular",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defunkt",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "numberOfRepos",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/user/repo/popular [ with stargazers and number of repos]",
+			"request": {
+				"url": "http://localhost:3000/api/user/repo/popular",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defunkt",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "numberOfRepos",
+							"value": "6",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "stargazers",
+							"value": "1000",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

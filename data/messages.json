@@ -1,0 +1,7 @@
+{
+	"200": "Api query Successful",
+	"492": "Error as TCP connection refused",
+	"493": "Stargazers Count/ Max number of repos were not sent. Either or both of them must be specified",
+	"494": "Number of max repositories to be returned must be an integer",
+	"495": "Stargazers be an integer"
+}
